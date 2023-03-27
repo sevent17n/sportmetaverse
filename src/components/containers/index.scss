@@ -1,0 +1,19 @@
+@import "src/assets/styles/mixin";
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position:relative;
+}
+
+.main {
+  padding: 60px 0 80px 0;
+  position:relative;
+}
+
+.main-section {
+  padding: 90px 0;
+  @include _480{
+    padding:60px 0;
+  }
+}

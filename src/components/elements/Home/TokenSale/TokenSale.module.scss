@@ -1,0 +1,198 @@
+@import "src/assets/styles/mixin";
+
+.token-sale {
+  > h1 {
+    margin-bottom: 100px;
+
+    @include _768 {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.table {
+  --border-color: #777777;
+
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-spacing: 0;
+  color: #ffffff;
+  border-collapse: separate;
+  text-transform: uppercase;
+
+  @include _576 {
+    border: none;
+  }
+
+  thead th {
+    font-weight: 600;
+  }
+
+  thead th {
+    @include _576 {
+      padding-bottom: 35px;
+    }
+  }
+
+  tbody td {
+    @include _576 {
+      font-size: 0.75rem;
+    }
+  }
+
+  th,
+  td {
+    text-align: center;
+    height: 4rem;
+    border: 1px solid var(--border-color);
+    padding: 30px 40px;
+    font-weight: 500;
+
+    @include _576 {
+      padding: 10px;
+      border: none;
+      background: none;
+    }
+  }
+
+  th {
+    text-transform: uppercase;
+    border-top: 2px solid var(--border-color);
+    border-left: none;
+    border-right: none;
+    background:
+            linear-gradient(to bottom, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to bottom, transparent 0%, var(--border-color) 100%);
+    background-size: 1px 100%, 1px 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+
+    @include _576 {
+      border: none;
+      background: none;
+    }
+  }
+
+  td:first-child {
+    border-left: 2px solid var(--border-color);
+    border-top: none;
+    border-bottom: none;
+    background:
+            linear-gradient(to right, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to right, transparent 0%, var(--border-color) 100%);
+    background-size: 100% 1px, 100% 1px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+
+    @include _576 {
+      border: none;
+      background: none;
+    }
+  }
+
+  td:last-child {
+    border-right: 2px solid var(--border-color);
+    border-top: none;
+    border-bottom: none;
+    background:
+            linear-gradient(to left, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to left, transparent 0%, var(--border-color) 100%);
+    background-size: 100% 1px, 100% 1px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+
+    @include _576 {
+      border: none;
+      background: none;
+    }
+  }
+
+  th:first-child {
+    border: none;
+    background:
+            linear-gradient(to bottom, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to right, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to right, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to bottom, transparent 0%, var(--border-color) 100%);
+    background-size: 2px 100%, 100% 2px, 100% 1px, 1px 100%;
+    background-position: 0 0, 0 0, 0 100%, 100% 0;
+    background-repeat: no-repeat;
+
+    @include _576 {
+      border: none;
+      background: none;
+    }
+  }
+
+  th:last-child {
+    border: none;
+    background:
+            linear-gradient(to bottom, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to left, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to left, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to bottom, transparent 0%, var(--border-color) 100%);
+    background-size: 2px 100%, 100% 2px, 100% 1px, 1px 100%;
+    background-position: 100% 0, 0 0, 0 100%, 0 0;
+    background-repeat: no-repeat;
+
+    @include _576 {
+      border: none;
+      background: none;
+    }
+  }
+
+  tr:last-child td {
+    border-bottom: 2px solid var(--border-color);
+    border-right: none;
+    border-left: none;
+    background:
+            linear-gradient(to top, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to top, transparent 0%, var(--border-color) 100%);
+    background-size: 1px 100%, 1px 100%;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+
+    @include _576 {
+      border: none;
+      background: none;
+    }
+  }
+
+  tr:last-child td:first-child {
+    border: none;
+    background:
+            linear-gradient(to top, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to right, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to top, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to right, transparent 0%, var(--border-color) 100%);
+    background-size: 2px 100%, 100% 2px, 1px 100%, 100% 1px;
+    background-position: 0 0, 0 100%, 100% 0, 0 0;
+    background-repeat: no-repeat;
+
+    @include _576 {
+      border: none;
+      background: none;
+    }
+  }
+
+  tr:last-child td:last-child {
+    border: none;
+    background:
+            linear-gradient(to top, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to left, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to top, transparent 0%, var(--border-color) 100%),
+            linear-gradient(to left, transparent 0%, var(--border-color) 100%);
+    background-size: 2px 100%, 100% 2px, 1px 100%, 100% 1px;
+    background-position: 100% 0, 0 100%, 0 0, 0 0;
+    background-repeat: no-repeat;
+
+    @include _576 {
+      border: none;
+      background: none;
+    }
+  }
+}
+
+
+

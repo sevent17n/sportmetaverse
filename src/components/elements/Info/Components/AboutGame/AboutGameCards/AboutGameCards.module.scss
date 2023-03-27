@@ -1,0 +1,102 @@
+@import "src/assets/styles/mixin";
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  h1{
+    align-self: center;
+  }
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 100px;
+  @include _480 {
+    flex-direction: column;
+    gap:15px;
+  }
+}
+.card_image {
+  max-width: 60%;
+  @include _480 {
+    margin-top:15px;
+    max-width: 100%;
+  }
+}
+
+.card_description {
+  h1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    @include _480 {
+      text-align: center;
+      font-size: 1rem;
+      line-height: 16px;
+    }
+  }
+
+  p{
+    margin-top: 50px;
+    width:60%;
+    @include _1200 {
+      width:100%;
+    }
+    @include _850 {
+      width:100%;
+      font-size: 0.95rem;
+      line-height: 18px;
+    }
+    @include _480 {
+      width:100%;
+      font-size: 1rem;
+      line-height: 20px;
+    }
+  }
+}
+
+.card_blur_economy {
+  position: absolute;
+  top: -60vh;
+  right: -28vw;
+  z-index: -1;
+}
+
+.card_blur_vr {
+  position: absolute;
+  top: -35vh;
+  left: -20vw;
+  z-index: -1;
+}
+
+.card_coin {
+  position: absolute;
+  top: -270px;
+  right: -450px;
+  z-index: -1;
+}
+
+.bigBlur {
+  position: absolute;
+  top: -350px;
+  left: -310px;
+  z-index: -1;
+}
+
+.bgGrid {
+  position: absolute;
+  bottom: 0;
+  right: -300px;
+  z-index: -1;
+  @include _850{
+    display: none;
+  }
+}

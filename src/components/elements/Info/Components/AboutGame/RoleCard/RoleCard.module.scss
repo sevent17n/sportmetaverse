@@ -1,0 +1,126 @@
+@import "src/assets/styles/mixin";
+
+.roleCard_container {
+  margin-top: 80px;
+  display: Flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 50px;
+  position: relative;
+  @include _480 {
+    margin-top: 0;
+  }
+}
+
+.pinkBlur {
+  position: absolute;
+  top: -150px;
+}
+
+.card_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @include _480 {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.card {
+  display: flex;
+  width: 27%;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  @include _480 {
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.card_poster {
+  align-items: center;
+  border-radius: 30px;
+  width: 100%;
+  @include _480 {
+    padding-bottom: 10px;
+  }
+  img:first-child {
+    width: 100%;
+  }
+}
+
+
+.description {
+  width:95%;
+  align-self: flex-end;
+  @include _480{
+    align-self: center;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    @include _480 {
+      margin-top: 10px;
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  ul {
+    list-style: disc;
+    li {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 15px;
+      color: var(--white-smoke-color);
+      @include _480 {
+        line-height: 16px;
+        margin-top: 5px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.heading {
+  padding-right: 50px;
+  @include _480 {
+    margin-right: 0 !important;
+  }
+
+  p:first-child {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    @include _480 {
+      font-size: 0.8rem;
+      line-height: 12px;
+    }
+  }
+
+  p:last-child {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    margin-top: 20px;
+    @include _480 {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      line-height: 140%;
+    }
+  }
+}
+
+
+

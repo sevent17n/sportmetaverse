@@ -1,0 +1,48 @@
+@import "src/assets/styles/mixin";
+
+.our-partners {
+  > h1 {
+    margin-bottom: 100px;
+
+    @include _768 {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.partners {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include _576 {
+    flex-direction: column;
+  }
+
+  &-item {
+    margin-right: 150px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    @include _1024 {
+      margin-right: 44px;
+    }
+
+    @include _576 {
+      margin-right: 0;
+      margin-top: 50px;
+
+      &:last-child {
+        margin: 50px;
+      }
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+}

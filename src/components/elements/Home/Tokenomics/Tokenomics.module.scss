@@ -1,0 +1,78 @@
+@import "src/assets/styles/mixin";
+
+.tokenomics {
+  > h1 {
+    margin-bottom: 50px;
+  }
+
+  @include _1024 {
+    display: none;
+  }
+}
+
+.diagram {
+  text-align: center;
+  position: relative;
+
+  > img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.clue {
+  > p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  &-team {
+    top: 80px;
+    left: 150px;
+  }
+
+  &-nft {
+    top: 322px;
+    left: 68px;
+  }
+
+  &-sale {
+    top: 446px;
+    left: 92px;
+  }
+
+  &-earn {
+    bottom: 124px;
+    left: 137px;
+  }
+
+  &-part {
+    bottom: 115px;
+    right: 220px;
+
+    > p {
+      text-align: right;
+    }
+  }
+
+  &-mark {
+    bottom: 300px;
+    right: 75px;
+
+    > p {
+      text-align: right;
+    }
+  }
+
+  &-ecs {
+    top: 80px;
+    right: 150px;
+
+    > p {
+      text-align: right;
+    }
+  }
+}
