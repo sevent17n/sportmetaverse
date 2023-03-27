@@ -11,7 +11,7 @@ const RoleCardContainer = () => {
 	const { isMobile } = useMobile();
 	return (
 		<SectionWrapper className={styles.roleCard_container}>
-			{isMobile && <img src={pinkBlur} className={styles.pinkBlur} />}
+			{isMobile && <img src={pinkBlur} className={styles.pinkBlur} alt={''} />}
 			<div className={styles.heading}>
 				<p>ROLES IN SOCCER MANAGER </p>
 				<p>
