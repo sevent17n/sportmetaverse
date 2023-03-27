@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef, useState } from 'react';
+import React, { FC, useRef, useState } from 'react';
 import classNames from 'classnames';
 import styles from './MetaVerse.module.scss';
 import gradientBorder from '../../../../assets/images/secton-img/meta-verse/gradiend-border.png';

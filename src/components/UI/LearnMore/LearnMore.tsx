@@ -23,6 +23,7 @@ const LearnMore: FC<LearnMoreProps> = ({ className }) => {
 
 	return (
 		<a
+			href={'/'}
 			ref={ref}
 			className={styles['ripple-button']}
 			onClick={(e: any) => {

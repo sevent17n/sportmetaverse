@@ -7,7 +7,7 @@ import pinkBlur from '../../../../../assets/images/info/pinkBlur.png';
 import lightPinkBlur from '../../../../../assets/images/info/pinkBlur.svg';
 import { useMobile } from '../../../../../core/hooks/useMobile';
 const AboutGame = () => {
-	const { isMobile, isTablet } = useMobile();
+	const { isTablet } = useMobile();
 	return (
 		<SectionWrapper className={styles.aboutGame_container}>
 			<h1>About Game</h1>
